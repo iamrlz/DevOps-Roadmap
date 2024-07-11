@@ -11,7 +11,7 @@
   - Make a New Directory: `mkdir <file or directory name>`
   - Make a Multiple Directory: `mkdir <file1> <file2> <file3>`
   - Make a Directory without going inside the directory: `mkdir <filename>/<newfile>`
-  - Create a child directory without simultaneously creating a parent directory: `mkdir -p <newfile1>/<newfile2>`
+  - Create a child directory with simultaneously creating a parent directory: `mkdir -p <newfile1>/<newfile2>`
 
  
 - Change Directory
@@ -47,7 +47,7 @@
    - Append to a File: `cat file1 >> file2`
    - Create a new file and add text: `cat > newfile.txt`
  
-- `touch` Command
+- Create a file using `touch` Command:
     - Create a new empty file: `touch <filename>`
     - Create a new empty file without navigating into the directory: `touch /home/user/asia/test.txt>`
  
@@ -55,13 +55,13 @@
    - `more` command displays the content of a file one screen at a time: `more <newfile.txt>`
    - `less` command is more powerful than more and allows for backward movement in the file as well as forward movement: `less <newfile.text>`
      
-   -  #### Basic Navigation in `more`:
+   -  #### Navigation in `more`:
          - [Spacebar]: Move to the next screen.
          - [Enter]: Move one line down.
          - [b]: Move one screen back (if supported by the terminal).
     
          
-   -  #### Basic Navigation in `less`:
+   -  #### Navigation in `less`:
          - [Up Arrow (↑)]: Move one line up.
          - [Down Arrow (↓)]: Move one line down.
          - [/]: Search test.
