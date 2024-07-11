@@ -3,6 +3,9 @@
 - Present Working Directory: `pwd`
   
 - List Content: `ls`
+   - To Show Hidden files: `ls -a`
+   - To Show files in-order of creation: `ls -lt`
+   - To Show files in the reverse order of creation: `ls -ltr`
 
 - Make Directory
   - Make a New Directory: `mkdir <file or directory name>`
@@ -34,3 +37,32 @@
 - Remove File: `rm asia/pakistan/country.txt`
   
 - Copies directories and their contents recursively: `cp -r source_directory target_directory` like: `cp -r /home/user/working /home/user/backup`
+
+
+## More More Basic Commands
+
+- Working with Files & Directory: `Cat` Command
+   - Display File Content: `cat <filename>`
+   - Concatenate Multiple Files: `cat file1 file2 > combinedfile`
+   - Append to a File: `cat file1 >> file2`
+   - Create a new file and add text: `cat > newfile.txt`
+ 
+- `touch` Command
+    - Create a new empty file: `touch <filename>`
+    - Create a new empty file without navigating into the directory: `touch /home/user/asia/test.txt>`
+ 
+- Displaying File Content One Page at a Time: Pages
+   - `more` command displays the content of a file one screen at a time: `more <newfile.txt>`
+   - `less` command is more powerful than more and allows for backward movement in the file as well as forward movement: `less <newfile.text>`
+     
+   -  #### Basic Navigation in `more`:
+         - [Spacebar]: Move to the next screen.
+         - [Enter]: Move one line down.
+         - [b]: Move one screen back (if supported by the terminal).
+    
+         
+   -  #### Basic Navigation in `less`:
+         - [Up Arrow (↑)]: Move one line up.
+         - [Down Arrow (↓)]: Move one line down.
+         - [/]: Search test.
+
