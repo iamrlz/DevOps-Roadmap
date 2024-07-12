@@ -43,13 +43,20 @@
 
 - Working with Files & Directory: `Cat` Command
    - Display File Content: `cat <filename>`
-   - Concatenate Multiple Files: `cat file1 file2 > combinedfile`
+   - Concatenate Multiple Files: `cat file1 file2 > combined_file`
    - Append to a File: `cat file1 >> file2`
    - Create a new file and add text: `cat > newfile.txt`
  
-- Create a file using `touch` Command:
+- Create a file using `touch` Command
     - Create a new empty file: `touch <filename>`
     - Create a new empty file without navigating into the directory: `touch /home/user/asia/test.txt>`
+
+- To display a line of text or a string that is passed as an argument: `echo` Command
+     - `echo [options] [argument]` like: `echo "Hello World"`
+     - #### Common Options
+       - `-n`: Do not output the trailing newline.
+       - `-e`: Enable interpretation of backslash escapes.
+       - `-E`: Disable interpretation of backslash escapes (default).
  
 - Displaying File Content One Page at a Time: Pages
    - `more` command displays the content of a file one screen at a time: `more <file.txt>`
@@ -66,3 +73,36 @@
          - [Down Arrow (↓)]: Move one line down.
          - [/]: Search test.
 
+# Bit Advanced commands
+
+- Viewing a file or directory sizes (disk usage):
+    -  Summarize total size and show size in kilobytes: `du -sk test.img`
+    -  Summarize total size, show size in Megabytes and human-readable format: `du -sh test.img`
+    -  Long format and human-readable format: `ls -lh test.img`
+ 
+- Archiving Files:
+   - Archiving more than one file: `tar -cf test.tar file1 file2`
+   - Show long list content: `tar -tf test.tar`
+   - Extract content: `tar -xf test.tar`
+   - Compress the file: `tar -zcf test.tar file1 file2`
+ 
+- Compressing Filess:
+    - `bzip2`: High compression ratio, moderate speed.
+    - `gzip`: Fast compression/decompression, lower compression ratio.
+    - `xz`: Highest compression ratio,
+ 
+  - Un-compressing:
+     - `bunzip2 <filename>`
+     - `gunzip <filename>`
+     - `unxz <filename> `
+   
+  - How to read a compressed file without un-compressing:
+      - `bzcat <filename>`
+      - `zact <filename>`
+      - `xzcat <filename>`
+
+- Documentation and Get help Commands
+   - Command for displaying a brief description of other commands" `whatis echo`
+   - Manual command to view detailed documentation (man pages) for other commands: `man echo`
+   - Command-line option to display a brief help message with usage information for a command: `echo --help`
+   - Command for searching the manual page names and descriptions for a keyword: `apropos modpr`
