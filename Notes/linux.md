@@ -52,8 +52,8 @@
     - Create a new empty file without navigating into the directory: `touch /home/user/asia/test.txt>`
  
 - Displaying File Content One Page at a Time: Pages
-   - `more` command displays the content of a file one screen at a time: `more <newfile.txt>`
-   - `less` command is more powerful than more and allows for backward movement in the file as well as forward movement: `less <newfile.text>`
+   - `more` command displays the content of a file one screen at a time: `more <file.txt>`
+   - `less` command is more powerful than more and allows for backward movement in the file as well as forward movement: `less <file.text>`
      
    -  #### Navigation in `more`:
          - [Spacebar]: Move to the next screen.
