@@ -90,13 +90,13 @@
     - `bzip2`: High compression ratio, moderate speed.
     - `gzip`: Fast compression/decompression, lower compression ratio.
     - `xz`: Highest compression ratio,
- 
-  - Un-compressing:
+
+ - Un-compressing:
      - `bunzip2 <filename>`
      - `gunzip <filename>`
      - `unxz <filename> `
    
-  - How to read a compressed file without un-compressing:
+ - How to read a compressed file without un-compressing:
       - `bzcat <filename>`
       - `zact <filename>`
       - `xzcat <filename>`
