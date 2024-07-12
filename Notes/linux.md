@@ -102,7 +102,7 @@
       - `xzcat <filename>`
 
 - Documentation and Get help Commands\
-   - Command is used to describe how a command name is interpreted. It can identify whether a command is internal or external: `type grep`
+   - Command to describe how a command name is interpreted, identify whether a command is internal or external: `type grep`
    - Command for displaying a brief description of other commands" `whatis echo`
    - Manual command to view detailed documentation (man pages) for other commands: `man echo`
    - Command-line option to display a brief help message with usage information for a command: `echo --help`
