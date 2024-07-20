@@ -124,6 +124,7 @@
      * Treat binary files as text (useful if you need to search binary files): `grep -a "pattern" <filename>`
      * Show byte offset of matching lines: `grep -b "pattern" <filename>`
      * Combining options: `grep -r -w -v "pattern" directory/`
+     * To check vendor for the ethernet controller used in sys: `ispc: | grep Ethernet` OR `cd /sys/class/net/eth0/devices`
 
 
    
@@ -139,4 +140,31 @@
 
 # Service Management Commands
 
-   - 
+   - `systemctl` Commands - interact with the systemd system and service manager:
+        * Start a service: `sudo systemctl start service_name`
+        * Stop a service: `sudo systemctl stop service_name`
+        * Restart a service: `sudo systemctl restart service_name`
+        * Reload a service (for services that support reloading without stopping): `sudo systemctl reload service_name`
+        * To check init process in sys: `systemctl --version`
+        * To check run level: `runlevel`
+        * To check default systemd target set: `systemctl get-default`
+        * To change it to multi-user.target: `sudo systemctl set-default multi-user.target`
+        * File type is `firefox.deb` in `/root`: `sudo file /root/firefox.deb`
+        * 
+
+- Input Redirection - allows users to control the input and output of commands:
+     * Input Redirection:
+          * Redirect input from a file: `command < input_file`
+
+     * Output Redirection:
+          * Redirect output to a file (overwrite): `command > output_file`, e.g. `echo $SHELL > shell.txt`
+          * Redirect output to a file (append): `command >> output_file`, e.g. `echo "This is a bash file" >> shell/txt`
+      
+     * Error Redirection:
+          * Redirect error output to a file (overwrite): `command 2> error_file`, e.g. `cat missing_file 2 > error.txt`
+          * Redirect error output to a file (append): `command 2>> error_file`, e.g. `cat missing_file 2 >> error.txt`
+      
+     * To avoid print error on screen: ` cat missing_file 2 > /dev/null` ∴ /dev/null = dum bucket
+      
+- Piping:
+     - `command1 | command2` , e.g. `ls -l | grep ".txt"`
