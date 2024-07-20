@@ -100,8 +100,36 @@
       - `bzcat <filename>`
       - `zact <filename>`
       - `xzcat <filename>`
+  
+        
+- Searching/Finding for a File or Directory names - `locate`:
+     - For finding file names: `locate <filename>`
+     - For Case-insensitive search: `locate -i <filename>`
+     - For Limit number of results: `locate -n 10 <filename>`
+     - For Update the database(if locate command doesn't work): `sudo updatedb`
 
-- Documentation and Get help Commands\
+
+- Searching/Finding text patterns within files - `grep`:
+     * For finding patterns within files: `grep "pattern" <filename>`
+     * For Search in multiple files: `grep "pattern" <file1> <file2>`
+     * Case-insensitive search: `grep -i "pattern" <filename>`
+     * Print a line using pattern: `grep "pattern" <file1.text>`
+     * Display line numbers: `grep -n "pattern" <filename>`
+     * Search for whole words: `grep -w "word" <filename>`
+     * Invert match (show lines that do not match): `grep -v "pattern" <filename>`
+     * Count matching lines: `grep -c "pattern" <filename>`
+     * Using grep with other commands: `command | grep "pattern"`
+     * Recursive search through directories(When you don't know the file content): `grep -r "pattern" directory/`
+     * Invert match (show lines that do not match the pattern): `grep -v "pattern" <filename>`
+     * Treat binary files as text (useful if you need to search binary files): `grep -a "pattern" <filename>`
+     * Show byte offset of matching lines: `grep -b "pattern" <filename>`
+     * Combining options: `grep -r -w -v "pattern" directory/`
+
+
+   
+  
+
+- Documentation and Get help Commands:
    - Command to describe how a command name is interpreted, identify whether a command is internal or external: `type grep`
    - Command for displaying a brief description of other commands" `whatis echo`
    - Manual command to view detailed documentation (man pages) for other commands: `man echo`
