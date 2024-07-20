@@ -127,7 +127,6 @@
 
 
    
-  
 
 - Documentation and Get help Commands:
    - Command to describe how a command name is interpreted, identify whether a command is internal or external: `type grep`
@@ -135,3 +134,9 @@
    - Manual command to view detailed documentation (man pages) for other commands: `man echo`
    - Command-line option to display a brief help message with usage information for a command: `echo --help`
    - Command for searching the manual page names and descriptions for a keyword: `apropos modpr`
+
+
+
+# Service Management Commands
+
+   - 
