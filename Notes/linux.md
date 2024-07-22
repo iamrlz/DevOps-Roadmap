@@ -57,6 +57,42 @@
        - `-n`: Do not output the trailing newline.
        - `-e`: Enable interpretation of backslash escapes.
        - `-E`: Disable interpretation of backslash escapes (default).
+
+- Text Editor: `vi` & `nano` cammand
+     * Open a file in Vim: `vi <file_name>`
+        * Modes:
+            * `i`: Insert mode
+            * `Esc:` Normal mode
+        * Navigation:
+            * `h`, `j`, `k`, `l`: Move left, down, up, and right
+            * `gg`: Go to the beginning of the file
+            * `G`: Go to the end of the file
+            * `w`: Move to the beginning of the next word
+            * `b`: Move to the beginning of the previous word
+        * Editing Text:
+            * `i`: Insert before the cursor
+            * `a`: Insert after the cursor
+            * `o`: Open a new line below the cursor and enter Insert Mode
+            * `dd`: Delete the current line
+            * `yy`: Yank (copy) the current line
+            * `p`: Paste the yanked or deleted content after the cursor
+          * Save and Quit:
+            * `:w`: Save
+            * `:q`: Quit
+            * `:wq`: Save and quit
+            * `:q!`: Quit without saving
+
+
+     * Open a file in nano: `nano <filename>`
+        * Navigation:
+            * `Ctrl + A`: Start of line
+            * `Ctrl + E`: End of line
+        * Editing:
+            * `Ctrl + K`: Cut line
+            * `Ctrl + U`: Paste
+        * Save and Quit:
+            * `Ctrl + O`: Save (Enter to confirm)
+            * `Ctrl + X`: Exit
  
 - Displaying File Content One Page at a Time: Pages
    - `more` command displays the content of a file one screen at a time: `more <file.txt>`
