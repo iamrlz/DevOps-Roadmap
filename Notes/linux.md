@@ -76,7 +76,7 @@
             * `dd`: Delete the current line
             * `yy`: Yank (copy) the current line
             * `p`: Paste the yanked or deleted content after the cursor
-          * Save and Quit:
+        * Save and Quit:
             * `:w`: Save
             * `:q`: Quit
             * `:wq`: Save and quit
@@ -163,8 +163,6 @@
      * To check vendor for the ethernet controller used in sys: `ispc: | grep Ethernet` OR `cd /sys/class/net/eth0/devices`
 
 
-   
-
 - Documentation and Get help Commands:
    - Command to describe how a command name is interpreted, identify whether a command is internal or external: `type grep`
    - Command for displaying a brief description of other commands" `whatis echo`
@@ -172,7 +170,8 @@
    - Command-line option to display a brief help message with usage information for a command: `echo --help`
    - Command for searching the manual page names and descriptions for a keyword: `apropos modpr`
 
-
+- Piping:
+     - `command1 | command2` , e.g. `ls -l | grep ".txt"`
 
 # Service Management Commands
 
@@ -202,5 +201,58 @@
       
      * To avoid print error on screen: ` cat missing_file 2 > /dev/null` ∴ /dev/null = dum bucket
       
-- Piping:
-     - `command1 | command2` , e.g. `ls -l | grep ".txt"`
+
+# Common Networking Commands
+
+
+  - IP:
+     * To Find IP: `IP address`
+    
+  - Ping:
+     * Used to test the reachability of a host on an IP network: `ping <hostname_or_ip_address>`
+  - Ping6:
+     * Used to test the reachability of a host using IPv6: `ping6 <hostname_or_ip_address>`
+   
+  - Hostname:
+     * Displays or sets the system's hostname: `hostname`  OR Set a New Hostname: `sudo hostname newhostname`
+    
+   - nslookup:
+     * Queries the DNS to obtain domain name or IP address mapping.: `nslookup <hostname_or_ip_address>`
+    
+  - dig:
+     * More advanced DNS querying tool: `dig <hostname>`
+   
+  - route:
+     * Displays or modifies the IP routing table: `route`
+       * To add a route: `sudo route add -net <network> netmask <netmask> gw <gateway>`
+
+  - ip link:
+     * Displays or modifies network interfaces: `ip link show`
+         * To bring an interface up: `sudo ip link set <interface> up`
+         * To bring an interface down: `sudo ip link set <interface> down`
+
+### DNS 
+       
+* To Find DNS Name 
+    - `cat /etc/resolv.conf`
+
+* File that is responsible for host file-based DNS
+    - ` /etc/host`
+       
+* Change the order to DNS & Hosts
+    - `sudo vim /etc/nsswitch.conf` , then `Hosts = dnsfiles`
+       
+* To change DNS nameserver
+    - `sudo vim /etc/resolv.conf`
+
+## Troubleshooting Network
+   - [x] Testcase init
+     
+ 1. Check Interface: `ip link`
+ 2. Check DNS Resolution: `nslookup <ip_address>`
+ 3. Check Connectivity: `ping <ip_address>`
+ 4. Check Route: `traceroute <ip_address>`
+ 5. Check Server: `netstat -an | grep 80 | grep -i LISTEN`
+ 6. Check again Interface: `ip link`
+
+       
