@@ -172,6 +172,11 @@
 
 - Piping:
      - `command1 | command2` , e.g. `ls -l | grep ".txt"`
+- Kernel Version:
+     - `uname`
+ - Kernel Version Number:
+     - `uname -r`
+             
 
 # Service Management Commands
 
@@ -245,7 +250,7 @@
 * To change DNS nameserver
     - `sudo vim /etc/resolv.conf`
 
-## Troubleshooting Network
+## Troubleshooting a Network
    - [x] Testcase init
      
  1. Check Interface: `ip link`
