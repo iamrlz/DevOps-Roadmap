@@ -267,6 +267,7 @@
 
    - Create a User: `sudo useradd username`
    - Set Password for User: `sudo passwd username`
+   - Display Current User: `whoami`
    - Delete a User: `sudo userdel username`
    - Delete a User and Their Home Directory: `sudo userdel -r username`
    - To view `user` stored information: `cat /etc/passwd`
@@ -299,5 +300,19 @@
    - View Service Accounts: `awk -F: '($3 < 1000) {print $1}' /etc/passwd`
    - To view the `sudo` account stored information: `cat /etc/sudoers`
    - To edit sudoers File: `visudo`
+
+
+## Access Control Commands
+
+   - View User Information: `cat /etc/passwd`
+        - Displays user information for users starting with `username`: `cat /etc/passwd | grep '^username' `
+   - View Encrypted Password Information: `sudo grep '^username' /etc/shadow`
+   - View Group Information: `grep '^username' /etc/group`
+
+
+## Linux File Permissions
+
+   ### Modifying File Permission:
+
 
 
