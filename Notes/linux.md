@@ -260,4 +260,44 @@
  5. Check Server: `netstat -an | grep 80 | grep -i LISTEN`
  6. Check again Interface: `ip link`
 
-       
+
+## Linux Accounts
+
+   #### User Management:
+
+   - Create a User: `sudo useradd username`
+   - Set Password for User: `sudo passwd username`
+   - Delete a User: `sudo userdel username`
+   - Delete a User and Their Home Directory: `sudo userdel -r username`
+   - To view `user` stored information: `cat /etc/passwd`
+
+   note:     
+    - To Check information about the user: `id <username>`
+    - To view the last user who is currently logged In: `who`
+    - To view all logged In users: `last`
+    
+   #### Group Management:
+
+   - Create a Group: `sudo groupadd groupname`
+   - Add a User to a Group: `sudo usermod -aG groupname username`
+   - List Groups for a User: `groups username`
+   - To view `group` stored information: `cat /etc/group`
+   
+   #### Superuser (Root) Privileges Management:
+
+   - Runs a command as the root user: `sudo <command>`
+   - Switch to Root User: `sudo su` OR `su -`
+     
+   
+   #### System Accounts Management:
+
+   - List System Accounts: `awk -F: '($3 < 1000) {print $1}' /etc/passwd`
+
+   
+   #### Service Accounts Management:
+
+   - View Service Accounts: `awk -F: '($3 < 1000) {print $1}' /etc/passwd`
+   - To view the `sudo` account stored information: `cat /etc/sudoers`
+   - To edit sudoers File: `visudo`
+
+
