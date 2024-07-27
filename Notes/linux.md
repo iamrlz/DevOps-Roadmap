@@ -272,9 +272,9 @@
    - To view `user` stored information: `cat /etc/passwd`
 
    note:     
-    - To Check information about the user: `id <username>`
-    - To view the last user who is currently logged In: `who`
-    - To view all logged In users: `last`
+   * To Check information about the user: `id <username>`
+   * To view the last user who is currently logged- in: `who`
+   * To view all logged-in users: `last`
     
    #### Group Management:
 
