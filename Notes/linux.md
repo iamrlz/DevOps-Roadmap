@@ -12,8 +12,8 @@
   - Make a Multiple Directory: `mkdir <file1> <file2> <file3>`
   - Make a Directory without going inside the directory: `mkdir <filename>/<newfile>`
   - Create a child directory with simultaneously creating a parent directory: `mkdir -p <newfile1>/<newfile2>`
-  - Create a file under each directory by the name `capital.tx` without going inside the directory: `touch /home/bob/countries/{USA,UK,India}/capital.txt`  OR
-  - Using echo command: `echo "" > /home/bob/countries/India/capital.txt` ∴ The echo "" > part creates an empty file by echoing an empty string into it.
+  - Create a file under each directory by the name `capital.tx` without going inside the directory: `touch /home/username/countries/{USA,UK}/capital.txt`
+  - Add the capital cities name in the file Using `echo` command: `echo "Washington, D.C" > /home/username/countries/USA/capital.txt && echo "London" > /home/username/countries/UK/capital.txt`
 
  
 - Change Directory
