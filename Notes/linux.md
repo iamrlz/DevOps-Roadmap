@@ -12,6 +12,7 @@
   - Make a Multiple Directory: `mkdir <file1> <file2> <file3>`
   - Make a Directory without going inside the directory: `mkdir <filename>/<newfile>`
   - Create a child directory with simultaneously creating a parent directory: `mkdir -p <newfile1>/<newfile2>`
+  - Create a file under each directory by the name `capital.tx` without going inside the directory: `touch /home/bob/countries/{USA,UK,India}/capital.txt`
 
  
 - Change Directory
