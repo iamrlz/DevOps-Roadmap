@@ -2,14 +2,13 @@
 
 ### Git Commans :)
 
-- git init 
-- git add .
-- git status[optional]
-- git commit -m "msg"
-- git remote add origin [link]
-- git push origin main
-- git pull origin main
-- git branch [name]
-- git log
-- git checkout [branch name]
---- Fork/issue / pull request/merge --- 
+- Initialize a repository: git init
+- Add all changes to staging: git add .
+- View the status of the repo (optional): git status
+- Commit changes with a message: git commit -m "msg"
+- Add a remote repository: git remote add origin [link]
+- Push changes to the main branch: git push origin main
+- Pull latest changes from the main branch: git pull origin main
+- Create a new branch: git branch [name]
+- View commit history: git log
+- Switch to a specific branch: git checkout [branch name]
