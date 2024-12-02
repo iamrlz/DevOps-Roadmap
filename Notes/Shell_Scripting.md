@@ -12,12 +12,12 @@
 
          ```
          # Create directories
-         mkdir -p /home/bob/countries/USA /home/bob/countries/UK /home/bob/countries/India
+         mkdir -p /home/iamrlz/countries/Pakistan /home/iamrlz/countries/USA /home/iamrlz/countries/UK 
 
           # Create capital.txt files and add capital cities' names
-            echo "Washington, D.C" > /home/bob/countries/USA/capital.txt
-            echo "London" > /home/bob/countries/UK/capital.txt
-            echo "New Delhi" > /home/bob/countries/India/capital.txt
+            echo "Islamabad" > /home/iamrlz/countries/Pakistan/capital.txt
+            echo "Washington, D.C" > /home/iamrlz/countries/USA/capital.txt
+            echo "London" > /home/iamrlz/countries/UK/capital.txt
 
          # Print the system uptime
          uptime
