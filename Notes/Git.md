@@ -23,3 +23,9 @@
 - Create a new branch and switch to it: `git checkout -b [branch name]`
 - Delete a branch: `git branch -d [branch name]`
 - List all branches: `git branch`
+
+
+### Rebase
+- Rebase your current branch with changes from main: `git rebase main`
+- Rebase last 4 commits interactively: `git rebase -i HEAD~4`
+- Apply a specific commit from another branch: `git cherry-pick [hash]`
