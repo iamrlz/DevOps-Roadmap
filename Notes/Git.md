@@ -12,3 +12,9 @@
 - Create a new branch: `git branch [name]`
 - View commit history: `git log`
 - Switch to a specific branch: `git checkout [branch name]`
+
+
+### Branch
+- Create a new branch and switch to it: `git checkout -b [branch name]`
+- Delete a branch: `git branch -d [branch name]`
+- List all branches: `git branch`
