@@ -14,6 +14,11 @@
 - Switch to a specific branch: `git checkout [branch name]`
 
 
+### Fetch and Merge
+- Fetch the latest changes from the remote main branch: `git fetch origin main`
+- Merge changes from remote main into local: `git merge origin main`
+- Fetch and merge in one command: `git pull origin main`
+
 ### Branch
 - Create a new branch and switch to it: `git checkout -b [branch name]`
 - Delete a branch: `git branch -d [branch name]`
