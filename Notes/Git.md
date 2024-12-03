@@ -29,3 +29,9 @@
 - Rebase your current branch with changes from main: `git rebase main`
 - Rebase last 4 commits interactively: `git rebase -i HEAD~4`
 - Apply a specific commit from another branch: `git cherry-pick [hash]`
+
+
+### Revert and Reset
+- Revert a specific commit (undo changes): `git revert [hash]`
+- Soft reset to previous commit (keep changes): `git reset --soft HEAD~1`
+- Hard reset to previous commit (discard changes): `git reset --hard HEAD~1`
