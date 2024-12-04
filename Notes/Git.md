@@ -27,7 +27,7 @@
 
 ### Rebase
 - Rebase your current branch with changes from main: `git rebase main`
-- Rebase last 4 commits interactively: `git rebase -i HEAD~4`
+- Interactive rebase to combine multiple commits into one: `git rebase -i [hash]`
 - Apply a specific commit from another branch: `git cherry-pick [hash]`
 
 
