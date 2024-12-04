@@ -34,3 +34,25 @@ The repository is organized into the following folders and files:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/iamrlz/DevOps-Roadmap.git
+
+2. Navigate through the `Material` and `Notes` folders.
+3. Start with the [`linux.md`](Notes/linux.md) file if you're new to Linux.
+4. Follow along with examples and practice.
+
+## 🤝 Contributing
+
+We welcome contributions! If you'd like to add more notes, correct errors, or enhance the roadmap, please:
+
+1. Fork this repository.
+2. Make your changes.
+3. Submit a pull request with a brief description of your updates.
+
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE). Feel free to use and share the material.
+
+---
+
+### 🌟 Start your DevOps journey now and become proficient in the tools and technologies driving modern IT!
+
+Happy learning! 😊
