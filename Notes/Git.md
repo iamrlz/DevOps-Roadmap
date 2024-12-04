@@ -35,3 +35,13 @@
 - Revert a specific commit (undo changes): `git revert [hash]`
 - Soft reset to previous commit (keep changes): `git reset --soft HEAD~1`
 - Hard reset to previous commit (discard changes): `git reset --hard HEAD~1`
+
+
+### Stash
+- Save changes temporarily without committing: `git stash`
+- Restore stashed changes: `git stash pop`
+- Show list of stashes: `git stash list`
+- Show contents of a specific stash: `git stash show stash@{1}`
+- Apply a specific stash: `git stash pop stash@{1}`
+- Clear all stashes: `git stash clear`
+
