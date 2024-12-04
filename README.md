@@ -11,9 +11,10 @@ The repository is organized into the following folders and files:
 - Each subfolder or file focuses on a specific topic for structured learning.
 
 ### **Notes**
-- **`linux.md`**: A comprehensive guide to Linux commands, file system basics, and advanced administration.
-- **`git.md`**: Notes on Git version control system, including commands, workflows, and best practices.
-- **`shell_scripting.md`**: A primer on Shell scripting, covering basic to advanced scripts for automation and DevOps tasks.
+- [**`linux.md`**](Notes/linux.md): A comprehensive guide to Linux commands, file system basics, and advanced administration.
+- [**`git.md`**](Notes/git.md): Notes on Git version control system, including commands, workflows, and best practices.
+- [**`shell_scripting.md`**](Notes/shell_scripting.md): A primer on Shell scripting, covering basic to advanced scripts for automation and DevOps tasks.
+
 
 ## 🚀 Features
 
