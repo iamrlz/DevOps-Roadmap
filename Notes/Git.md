@@ -46,6 +46,8 @@
 - Clear all stashes: `git stash clear`
 
 
-### Undo and Reflog
+### Undo, Reflog and Restore
 - Undo recent changes or commits: `git reflog`
 - Hard reset to a specific commit hash: `git reset --hard [hash_no]`
+- Remove changes from the staging area (before committing): `git restore --staged [file name]`
+
