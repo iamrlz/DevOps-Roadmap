@@ -45,3 +45,7 @@
 - Apply a specific stash: `git stash pop stash@{1}`
 - Clear all stashes: `git stash clear`
 
+
+### Undo and Reflog
+- Undo recent changes or commits: `git reflog`
+- Hard reset to a specific commit hash: `git reset --hard [hash_no]`
