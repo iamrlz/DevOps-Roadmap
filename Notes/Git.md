@@ -1,6 +1,6 @@
 # Basics of Git
 
-### Git Top 10 Commans :)
+### Git Top 10 Commands :)
 
 - Initialize a repository: `git init`
 - Add all changes to staging: `git add .`
