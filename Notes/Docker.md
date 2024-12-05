@@ -24,7 +24,9 @@
 - Delete an image: `docker rmi [image name]`
 
 
-
+### Pull and Run Images
+- Pull and run an image in one step: `docker run [image name]`
+- Pull an image without running it: `docker pull [image name]`
 
 
 
