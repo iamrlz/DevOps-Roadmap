@@ -14,7 +14,9 @@
 - List all containers (including stopped ones): `docker ps -a`
 
 
-
+### Stop and Remove Containers
+- Stop a running container: `docker stop [id]`
+- Remove a stopped container: `docker rm [docker name]`
 
 
 
