@@ -19,7 +19,9 @@
 - Remove a stopped container: `docker rm [docker name]`
 
 
-
+### Images
+- List all images: `docker images`
+- Delete an image: `docker rmi [image name]`
 
 
 
