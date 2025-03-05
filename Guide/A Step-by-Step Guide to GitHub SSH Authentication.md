@@ -49,7 +49,7 @@ If everything is set up correctly, you’ll see a welcome message from GitHub.
 Go to your project folder and set up Git:
 
 ```bash
-cd myscripts/
+cd directoryname/
 git init
 ```
 
