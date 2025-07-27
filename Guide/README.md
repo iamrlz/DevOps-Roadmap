@@ -4,7 +4,7 @@ Welcome to the **DevOps Learning Journey**! This folder contains step-by-step gu
 
 ## 📘 Available Guides
 
-### 1️⃣ [A Step-by-Step Guide to GitHub SSH Authentication](https://github.com/iamrlz/DevOps-Roadmap/blob/main/Guide/A%20Step-by-Step%20Guide%20to%20GitHub%20SSH%20Authentication.md)
+### 1️⃣ [A Step-by-Step Guide to GitHub SSH Authentication](https://github.com/iamrlz/DevOps-Roadmap/blob/main/Guide/GitHub-SSH-Authentication-Guide.md)
 Learn how to set up SSH authentication for GitHub to securely push and pull code without typing your password.
 
 ### 2️⃣ [Getting Started with Git and GitHub]
