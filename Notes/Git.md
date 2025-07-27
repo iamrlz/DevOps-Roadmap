@@ -7,6 +7,7 @@
 - View the status of the repo (optional): `git status`
 - Commit changes with a message: `git commit -m "msg"`
 - Add a remote repository: `git remote add origin [link]`
+- iF remote repo have existing files: ` git pull origin main --allow-unrelated-histories`
 - Push changes to the main branch: `git push origin main`
 - Pull latest changes from the main branch: `git pull origin main`
 - Create a new branch: `git branch [name]`
